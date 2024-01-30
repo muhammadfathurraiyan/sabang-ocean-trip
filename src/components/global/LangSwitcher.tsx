@@ -1,8 +1,13 @@
-
 import { CaretDown } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
-export default function LangSwitcher({ lang }: { lang: string }) {
+export default function LangSwitcher({
+  lang,
+  bahasa,
+}: {
+  lang: string;
+  bahasa: string;
+}) {
   return (
     <div className="flex relative items-center gap-2 group">
       {lang === "en" ? (
@@ -70,15 +75,17 @@ export default function LangSwitcher({ lang }: { lang: string }) {
         </svg>
       )}
       <div className="flex items-center gap-1">
-        <p className="group-hover:text-sky-600 transition-all uppercase">{lang}</p>
+        <p className="group-hover:text-sky-600 transition-all uppercase">
+          {lang}
+        </p>
         <CaretDown
           size={14}
-          className="group-hover:rotate-180 transition-all"
+          className="group-hover:rotate-180 group-hover:text-sky-600 transition-all"
         />
       </div>
       {/* modal */}
-      <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 flex flex-col gap-2 transition-all absolute p-2 top-7 rounded bg-slate-200/50 border border-slate-300 dark:border-slate-600 dark:bg-slate-800">
-        <p className="font-medium">Bahasa:</p>
+      <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 flex flex-col gap-2 transition-all absolute p-2 top-7 -left-7 rounded bg-slate-100 border border-slate-300 dark:border-slate-600 dark:bg-slate-800">
+        <p className="font-medium">{bahasa}:</p>
         <Link href="/en" className="flex items-center gap-2 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
