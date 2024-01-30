@@ -1,10 +1,11 @@
-"use client";
 import Link from "next/link";
 import ThemeSwitcher from "./ThemeSwitcher";
-import { CaretDown } from "@phosphor-icons/react";
 import LangSwitcher from "./LangSwitcher";
+import { CaretDown } from "@phosphor-icons/react/dist/ssr";
+import { useTranslation } from "@/app/i18n";
 
-const Header = () => {
+const Header = async ({ lang }: { lang: string }) => {
+  const { t } = await useTranslation(lang, "header");
   return (
     <header className="flex items-center justify-between py-2 px-28">
       <Link href={"/"}>
@@ -18,39 +19,39 @@ const Header = () => {
           href={"/dolphin-trip"}
           className="hover:text-sky-600 transition-all"
         >
-          Dolphin Trip
+          {t("dolphin-trip")}
         </Link>
         <Link
           href={"/dolphin-trip"}
           className="hover:text-sky-600 transition-all"
         >
-          Diving
+          {t("diving")}
         </Link>
         <Link
           href={"/dolphin-trip"}
           className="hover:text-sky-600 transition-all"
         >
-          Snorkeling
+          {t("snorkeling")}
         </Link>
         <Link
           href={"/dolphin-trip"}
           className="hover:text-sky-600 transition-all"
         >
-          Kilometer 0 Indonesia
+          {t("kilometer-0")}
         </Link>
         <Link
           href={"/dolphin-trip"}
           className="flex items-center gap-1 hover:text-sky-600 transition-all"
         >
-          Destinasi Wisata <CaretDown size={14} />
+          {t("destinasi-wisata")} <CaretDown size={14} />
         </Link>
         <Link
           href={"/paket-wisata"}
           className="flex items-center gap-1 hover:text-sky-600 transition-all"
         >
-          Paket Wisata <CaretDown size={14} />
+          {t("paket-wisata")} <CaretDown size={14} />
         </Link>
-        <LangSwitcher />
+        <LangSwitcher lang={lang} />
         <ThemeSwitcher />
       </div>
     </header>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/global/Header";
 import { dir } from "i18next";
-import { languages } from "@/libs/i18n/settings";
+import { languages } from "@/app/i18n/settings";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,11 +24,11 @@ export default function RootLayout({
   params: { lang: string };
 }>) {
   return (
-    <html lang={lang} dir={dir(lang)}>
+    <html className="dark" lang={lang} dir={dir(lang)}>
       <body
         className={`${inter.className} bg-slate-100 dark:bg-slate-900 text-slate-950 dark:text-slate-100`}
       >
-        <Header />
+        <Header lang={lang} />
         {children}
       </body>
     </html>

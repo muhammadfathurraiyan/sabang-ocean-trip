@@ -1,12 +1,11 @@
-"use client";
-import { CaretDown, Translate } from "@phosphor-icons/react";
-import React, { useState } from "react";
 
-export default function LangSwitcher() {
-  const [lang, setLang] = useState("EN");
+import { CaretDown } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
+
+export default function LangSwitcher({ lang }: { lang: string }) {
   return (
     <div className="flex relative items-center gap-2 group">
-      {lang === "EN" ? (
+      {lang === "en" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -71,16 +70,16 @@ export default function LangSwitcher() {
         </svg>
       )}
       <div className="flex items-center gap-1">
-        <p className="group-hover:text-sky-600 transition-all">{lang}</p>
-        <CaretDown size={14} className="group-hover:rotate-180 transition-all" />
+        <p className="group-hover:text-sky-600 transition-all uppercase">{lang}</p>
+        <CaretDown
+          size={14}
+          className="group-hover:rotate-180 transition-all"
+        />
       </div>
       {/* modal */}
       <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 flex flex-col gap-2 transition-all absolute p-2 top-7 rounded bg-slate-200/50 border border-slate-300 dark:border-slate-600 dark:bg-slate-800">
         <p className="font-medium">Bahasa:</p>
-        <div
-          onClick={() => setLang("EN")}
-          className="flex items-center gap-2 cursor-pointer"
-        >
+        <Link href="/en" className="flex items-center gap-2 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -119,8 +118,8 @@ export default function LangSwitcher() {
             </g>
           </svg>
           <p className="text-sm font-medium">English</p>
-        </div>
-        <div onClick={() => setLang("ID")} className="flex items-center gap-2 cursor-pointer">
+        </Link>
+        <Link href="/id" className="flex items-center gap-2 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             shapeRendering="geometricPrecision"
@@ -146,7 +145,7 @@ export default function LangSwitcher() {
             </g>
           </svg>
           <p className="text-sm font-medium">Indonesian</p>
-        </div>
+        </Link>
       </div>
     </div>
   );
