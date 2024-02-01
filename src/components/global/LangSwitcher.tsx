@@ -84,9 +84,9 @@ export default function LangSwitcher({
         />
       </div>
       {/* modal */}
-      <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 flex flex-col gap-2 transition-all absolute p-2 top-7 -left-7 rounded bg-slate-100 border border-slate-300 dark:border-slate-600 dark:bg-slate-800">
+      <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 flex flex-col gap-2 transition-all absolute p-2 top-7 -left-7 rounded bg-slate-100 border border-slate-300 dark:border-slate-600 dark:bg-slate-800 text-slate-950 dark:text-slate-100">
         <p className="font-medium">{bahasa}:</p>
-        <Link href="/en" className="flex items-center gap-2 cursor-pointer">
+        <Link href="/en" className="flex items-center gap-2 cursor-pointer group/lang">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -124,9 +124,9 @@ export default function LangSwitcher({
               <use xlinkHref="#s5" x="2470" />
             </g>
           </svg>
-          <p className="text-sm font-medium">English</p>
+          <p className="text-sm font-medium group-hover/lang:text-sky-600 transition-all">English</p>
         </Link>
-        <Link href="/id" className="flex items-center gap-2 cursor-pointer">
+        <Link href="/id" className="flex items-center gap-2 cursor-pointer group/lang">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             shapeRendering="geometricPrecision"
@@ -151,7 +151,7 @@ export default function LangSwitcher({
               />
             </g>
           </svg>
-          <p className="text-sm font-medium">Indonesian</p>
+          <p className="text-sm font-medium group-hover/lang:text-sky-600 transition-all">Indonesian</p>
         </Link>
       </div>
     </div>

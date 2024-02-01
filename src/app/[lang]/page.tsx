@@ -11,7 +11,7 @@ export default async function Home({
   return (
     <>
       <HeroSection />
-      <div className="px-28 max-lg:px-4">
+      <div className="px-28 max-lg:px-4 min-h-screen">
         <main>
           <h1>{t("title")}</h1>
           <Link href={`/${lang}/second-page`}>{t("to-second-page")}</Link>

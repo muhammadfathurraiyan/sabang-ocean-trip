@@ -1,9 +1,9 @@
 "use client";
-import { CaretDown, List, X, XCircle } from "@phosphor-icons/react";
+import { CaretDown, List, XCircle } from "@phosphor-icons/react";
 import Link from "next/link";
 import LangSwitcher from "../LangSwitcher";
 import ThemeSwitcher from "../ThemeSwitcher";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function HeaderClient({
   dolphinTrip,
@@ -25,9 +25,31 @@ export default function HeaderClient({
   lang: string;
 }) {
   const [toggle, setToggle] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
+
+  const handleIsScroll = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      if (windowHeight > 1) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleIsScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleIsScroll);
+    };
+  }, []);
   return (
     <>
-      <header className="flex fixed inset-x-0 z-10 backdrop-blur items-center justify-between py-2 px-28 max-lg:px-4">
+      <header
+        className={`flex fixed inset-x-0 z-10 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/10"} text-slate-100 transition-all`}
+      >
         <div className="flex items-center gap-4">
           <div
             onClick={() => setToggle(!toggle)}
@@ -95,7 +117,10 @@ export default function HeaderClient({
               <span className="font-bold text-sm -mt-2">Ocean Trip</span>
             </h1>
           </Link>
-          <div onClick={() => setToggle(!toggle)} className="cursor-pointer hover:text-sky-600 transition-all">
+          <div
+            onClick={() => setToggle(!toggle)}
+            className="cursor-pointer hover:text-sky-600 transition-all"
+          >
             <XCircle size={28} />
           </div>
         </div>
