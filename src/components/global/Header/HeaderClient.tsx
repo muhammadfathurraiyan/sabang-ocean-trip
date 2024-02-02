@@ -48,12 +48,12 @@ export default function HeaderClient({
   return (
     <>
       <header
-        className={`flex fixed inset-x-0 z-10 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/0"} text-slate-100 transition-all`}
+        className={`flex fixed inset-x-0 z-10 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/0"} text-slate-100 duration-300`}
       >
         <div className="flex items-center gap-4">
           <div
             onClick={() => setToggle(!toggle)}
-            className="lg:hidden hover:text-sky-600 transition-all cursor-pointer rounded flex items-center justify-center w-9 h-9 border border-slate-300"
+            className="lg:hidden hover:text-sky-400 duration-300 cursor-pointer rounded flex items-center justify-center w-9 h-9 border border-slate-300"
           >
             <List size={22} />
           </div>
@@ -67,37 +67,37 @@ export default function HeaderClient({
         <div className="flex items-center gap-6 max-lg:gap-4 text-sm font-medium">
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all max-lg:hidden"
+            className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {dolphinTrip}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all max-lg:hidden"
+            className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {diving}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all max-lg:hidden"
+            className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {snorkeling}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all max-lg:hidden"
+            className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {kilometer0}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="flex items-center gap-1 hover:text-sky-600 transition-all max-lg:hidden"
+            className="flex items-center gap-1 hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {destinasiWisata} <CaretDown size={14} />
           </Link>
           <Link
             href={"/paket-wisata"}
-            className="flex items-center gap-1 hover:text-sky-600 transition-all max-lg:hidden"
+            className="flex items-center gap-1 hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {paketWisata} <CaretDown size={14} />
           </Link>
@@ -106,7 +106,7 @@ export default function HeaderClient({
         </div>
       </header>
       <aside
-        className={`fixed inset-0 z-20 flex-col gap-8 transition-all flex px-4 py-2 bg-slate-100 dark:bg-slate-800 ${
+        className={`fixed inset-0 z-20 flex-col gap-8 duration-300 flex px-4 py-2 bg-slate-100 dark:bg-slate-800 ${
           toggle ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
@@ -119,7 +119,7 @@ export default function HeaderClient({
           </Link>
           <div
             onClick={() => setToggle(!toggle)}
-            className="cursor-pointer hover:text-sky-600 transition-all"
+            className="cursor-pointer hover:text-sky-400 duration-300"
           >
             <XCircle size={28} />
           </div>
@@ -127,37 +127,37 @@ export default function HeaderClient({
         <div className="flex flex-col items-start gap-2 font-medium">
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all"
+            className="hover:text-sky-400 duration-300"
           >
             {dolphinTrip}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all"
+            className="hover:text-sky-400 duration-300"
           >
             {diving}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all"
+            className="hover:text-sky-400 duration-300"
           >
             {snorkeling}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="hover:text-sky-600 transition-all"
+            className="hover:text-sky-400 duration-300"
           >
             {kilometer0}
           </Link>
           <Link
             href={"/dolphin-trip"}
-            className="flex items-center gap-1 hover:text-sky-600 transition-all"
+            className="flex items-center gap-1 hover:text-sky-400 duration-300"
           >
             {destinasiWisata} <CaretDown size={14} />
           </Link>
           <Link
             href={"/paket-wisata"}
-            className="flex items-center gap-1 hover:text-sky-600 transition-all"
+            className="flex items-center gap-1 hover:text-sky-400 duration-300"
           >
             {paketWisata} <CaretDown size={14} />
           </Link>

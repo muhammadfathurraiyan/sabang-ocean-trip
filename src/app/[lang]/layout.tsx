@@ -24,7 +24,7 @@ export default function RootLayout({
   params: { lang: string };
 }>) {
   return (
-    <html className="dark" lang={lang} dir={dir(lang)}>
+    <html lang={lang} dir={dir(lang)}>
       <body
         className={`${inter.className} bg-slate-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100`}
       >

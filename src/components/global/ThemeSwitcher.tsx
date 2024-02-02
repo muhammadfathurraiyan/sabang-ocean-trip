@@ -3,7 +3,7 @@ import { MoonStars, SunDim } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
 
 const ThemeSwitcher = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const className = "dark";
@@ -20,9 +20,9 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="hover:text-sky-600 transition-all"
+      className="hover:text-sky-400 duration-300"
     >
-      {darkMode ? <MoonStars size={22} /> : <SunDim size={22} />}
+      {darkMode ? <SunDim size={22} /> : <MoonStars size={22} />}
     </button>
   );
 };

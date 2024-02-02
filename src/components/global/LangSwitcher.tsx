@@ -75,16 +75,16 @@ export default function LangSwitcher({
         </svg>
       )}
       <div className="flex items-center gap-1">
-        <p className="group-hover:text-sky-600 transition-all uppercase">
+        <p className="group-hover:text-sky-400 duration-300 uppercase">
           {lang}
         </p>
         <CaretDown
           size={14}
-          className="group-hover:rotate-180 group-hover:text-sky-600 transition-all"
+          className="group-hover:rotate-180 group-hover:text-sky-400 duration-300"
         />
       </div>
       {/* modal */}
-      <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 flex flex-col gap-2 transition-all absolute p-2 top-7 -left-7 rounded bg-slate-100 border border-slate-300 dark:border-slate-600 dark:bg-slate-800 text-slate-950 dark:text-slate-100">
+      <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 flex flex-col gap-2 duration-300 absolute p-2 top-7 -left-7 rounded bg-slate-100 border border-slate-300 dark:border-slate-600 dark:bg-slate-800 text-slate-950 dark:text-slate-100">
         <p className="font-medium">{bahasa}:</p>
         <Link href="/en" className="flex items-center gap-2 cursor-pointer group/lang">
           <svg
@@ -124,7 +124,7 @@ export default function LangSwitcher({
               <use xlinkHref="#s5" x="2470" />
             </g>
           </svg>
-          <p className="text-sm font-medium group-hover/lang:text-sky-600 transition-all">English</p>
+          <p className="text-sm font-medium group-hover/lang:text-sky-400 duration-300">English</p>
         </Link>
         <Link href="/id" className="flex items-center gap-2 cursor-pointer group/lang">
           <svg
@@ -151,7 +151,7 @@ export default function LangSwitcher({
               />
             </g>
           </svg>
-          <p className="text-sm font-medium group-hover/lang:text-sky-600 transition-all">Indonesian</p>
+          <p className="text-sm font-medium group-hover/lang:text-sky-400 duration-300">Indonesian</p>
         </Link>
       </div>
     </div>

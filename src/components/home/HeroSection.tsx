@@ -24,7 +24,6 @@ export default function HeroSection({
   cta: string;
   lang: string;
 }) {
-  console.log(text1);
   return (
     <main>
       <Swiper
@@ -48,16 +47,16 @@ export default function HeroSection({
               className="w-full h-full absolute -z-10 object-cover"
             />
             <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-6">
-              <h1 className="font-bold text-4xl text-slate-100 text-center uppercase [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
+              <h1 className="font-bold text-4xl text-slate-100 text-center capitalize [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
                 {text1}
               </h1>
               <Link
                 href={`/${lang}/tour-package`}
-                className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-500 via-sky-600 to-sky-500 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
+                className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
               >
                 {cta}
                 <ArrowRight
-                  className="group-hover:translate-x-2 transition-all"
+                  className="group-hover:translate-x-2 duration-300"
                   weight="bold"
                   size={18}
                 />
@@ -73,16 +72,16 @@ export default function HeroSection({
               className="w-full h-full absolute -z-10 object-cover"
             />
             <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-6">
-              <h1 className="font-bold text-4xl text-slate-100 text-center uppercase [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
+              <h1 className="font-bold text-4xl text-slate-100 text-center capitalize [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
                 {text2}
               </h1>
               <Link
                 href={`/${lang}/dolphin-trip`}
-                className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-500 via-sky-600 to-sky-500 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
+                className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
               >
                 {cta}
                 <ArrowRight
-                  className="group-hover:translate-x-2 transition-all"
+                  className="group-hover:translate-x-2 duration-300"
                   weight="bold"
                   size={18}
                 />
@@ -98,16 +97,16 @@ export default function HeroSection({
               className="w-full h-full absolute -z-10 object-cover"
             />
             <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-6">
-              <h1 className="font-bold text-4xl text-slate-100 text-center uppercase [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
+              <h1 className="font-bold text-4xl text-slate-100 text-center capitalize [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
                 {text3}
               </h1>
               <Link
                 href={`/${lang}/snorkeling`}
-                className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-500 via-sky-600 to-sky-500 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
+                className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
               >
                 {cta}
                 <ArrowRight
-                  className="group-hover:translate-x-2 transition-all"
+                  className="group-hover:translate-x-2 duration-300"
                   weight="bold"
                   size={18}
                 />
