@@ -1,4 +1,12 @@
 {
-  "title": "Hi there!",
-  "to-second-page": "To second page"
+  "main": {
+    "satu": "Explore the Beauty of sabang.",
+    "dua": "Witnessing Dolphins in Action!",
+    "tiga": "Explore the Aquatic Realm of Rubiah island",
+    "cta": "Discover More"
+  },
+  "sabang": {
+    "text": "Discover the Charm of Sabang - where nature's beauty meets coastal magic. Sabang is calling, prepare to fall in love!",
+    "cta": "Explore"
+  }
 }

@@ -1,4 +1,12 @@
 {
-  "title": "halo!",
-  "to-second-page": "ke page 2"
+  "main": {
+    "satu": "Jelajahi destinasi wisata di kota sabang",
+    "dua": "Saksikan Indahnya Melihat Lumba-lumba",
+    "tiga": "Eksplor keindahan bawah laut Pulau rubiah",
+    "cta": "Selengkapnya"
+  },
+  "sabang": {
+    "text": "Temukan Pesona Sabang - tempat keindahan alam berpadu dengan keajaiban pesisir. Sabang memanggil, bersiaplah untuk jatuh cinta!",
+    "cta": "Eksplor"
+  }
 }

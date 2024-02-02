@@ -48,12 +48,12 @@ export default function HeaderClient({
   return (
     <>
       <header
-        className={`flex fixed inset-x-0 z-10 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/10"} text-slate-100 transition-all`}
+        className={`flex fixed inset-x-0 z-10 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/0"} text-slate-100 transition-all`}
       >
         <div className="flex items-center gap-4">
           <div
             onClick={() => setToggle(!toggle)}
-            className="lg:hidden hover:text-sky-600 transition-all cursor-pointer rounded flex items-center justify-center w-9 h-9 bg-slate-100 border border-slate-300 dark:border-slate-600 dark:bg-slate-800"
+            className="lg:hidden hover:text-sky-600 transition-all cursor-pointer rounded flex items-center justify-center w-9 h-9 border border-slate-300"
           >
             <List size={22} />
           </div>
