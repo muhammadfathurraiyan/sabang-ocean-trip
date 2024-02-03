@@ -10,8 +10,8 @@ export default function Card({ text }: { text: string }) {
       <div className="group overflow-hidden rounded-xl -z-10 absolute top-0 left-0 h-full w-full">
         <Image
           src={BG1}
-          alt=""
-          className="min-w-full max-h-full object-cover group-hover:scale-105 duration-300"
+          alt="card"
+          className="h-full w-full object-cover group-hover:scale-105 duration-300"
         />
       </div>
       <div className="flex flex-col gap-4 w-2/3 max-lg:w-full">

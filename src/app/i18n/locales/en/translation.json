@@ -1,6 +1,6 @@
 {
   "main": {
-    "satu": "Explore the Beauty of sabang.",
+    "satu": "Explore the Beauty of Sabang.",
     "dua": "Witnessing Dolphins in Action!",
     "tiga": "Explore the Aquatic Realm of Rubiah island",
     "cta": "Discover More"
@@ -9,7 +9,19 @@
     "text": "Discover the Charm of Sabang - where nature's beauty meets coastal magic. Sabang is calling, prepare to fall in love!",
     "cta": "Explore"
   },
-  "card" : {
+  "card": {
     "text": "Get a Free Travel Brochure, Click the Download Button!"
+  },
+  "destination": {
+    "title": "Destination Highlight",
+    "dolphin-trip": "Dolphin Trip",
+    "diving": "Diving",
+    "snorkeling": "Snorkeling",
+    "kilometer-0": "0 Kilometer Indonesia",
+    "pulau-rubiah": "Rubiah Island",
+    "gua-sarang": "Sarang Cave",
+    "gapang": "Gapang Beach",
+    "sumur": "Sumur Tiga Beach",
+    "benteng": "Anoi Itam Fortress"
   }
 }

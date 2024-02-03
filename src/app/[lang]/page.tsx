@@ -3,6 +3,7 @@ import HeroSection from "@/components/home/HeroSection";
 import { useTranslation } from "../i18n";
 import Sabang from "@/components/home/Sabang";
 import Card from "@/components/home/Card";
+import Destination from "@/components/home/Destination";
 
 export default async function Home({
   params: { lang },
@@ -22,6 +23,18 @@ export default async function Home({
       <section className="px-28 py-16 flex flex-col gap-16 max-lg:px-4">
         <Sabang text={t("sabang.text")} cta={t("sabang.cta")} lang={lang} />
         <Card text={t("card.text")} />
+        <Destination
+          title={t("destination.title")}
+          dolphin={t("destination.dolphin-trip")}
+          diving={t("destination.diving")}
+          snorkeling={t("destination.snorkeling")}
+          kilometer={t("destination.kilometer-0")}
+          rubiah={t("destination.pulau-rubiah")}
+          gua={t("destination.gua-sarang")}
+          gapang={t("destination.gapang")}
+          sumur={t("destination.sumur")}
+          benteng={t("destination.benteng")}
+        />
       </section>
     </>
   );

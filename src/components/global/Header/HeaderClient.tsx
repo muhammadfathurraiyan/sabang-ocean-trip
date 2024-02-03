@@ -99,7 +99,7 @@ export default function HeaderClient({
             href={"/paket-wisata"}
             className="flex items-center gap-1 hover:text-sky-400 duration-300 max-lg:hidden"
           >
-            {paketWisata} <CaretDown size={14} />
+            {paketWisata}
           </Link>
           <LangSwitcher bahasa={bahasa} lang={lang} />
           <ThemeSwitcher />
@@ -159,7 +159,7 @@ export default function HeaderClient({
             href={"/paket-wisata"}
             className="flex items-center gap-1 hover:text-sky-400 duration-300"
           >
-            {paketWisata} <CaretDown size={14} />
+            {paketWisata}
           </Link>
         </div>
       </aside>

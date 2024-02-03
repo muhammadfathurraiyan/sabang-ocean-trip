@@ -46,8 +46,8 @@ export default function HeroSection({
               alt="Iboih"
               className="w-full h-full absolute -z-10 object-cover"
             />
-            <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-6">
-              <h1 className="font-bold text-4xl text-slate-100 text-center capitalize [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
+            <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-4">
+              <h1 className="font-bold text-5xl max-lg:text-4xl text-slate-100 text-center [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
                 {text1}
               </h1>
               <Link
@@ -71,8 +71,8 @@ export default function HeroSection({
               alt="Dolphins"
               className="w-full h-full absolute -z-10 object-cover"
             />
-            <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-6">
-              <h1 className="font-bold text-4xl text-slate-100 text-center capitalize [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
+            <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-4">
+              <h1 className="font-bold text-5xl max-lg:text-4xl text-slate-100 text-center [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
                 {text2}
               </h1>
               <Link
@@ -96,8 +96,8 @@ export default function HeroSection({
               alt="Underwater"
               className="w-full h-full absolute -z-10 object-cover"
             />
-            <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-6">
-              <h1 className="font-bold text-4xl text-slate-100 text-center capitalize [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
+            <div className="w-2/3 max-lg:w-full flex flex-col items-center justify-center gap-4">
+              <h1 className="font-bold text-5xl max-lg:text-4xl text-slate-100 text-center [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)]">
                 {text3}
               </h1>
               <Link

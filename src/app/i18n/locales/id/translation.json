@@ -1,15 +1,27 @@
 {
   "main": {
-    "satu": "Jelajahi destinasi wisata di kota sabang",
+    "satu": "Jelajahi Destinasi Wisata di Kota Sabang",
     "dua": "Saksikan Indahnya Melihat Lumba-lumba",
-    "tiga": "Eksplor keindahan bawah laut Pulau rubiah",
+    "tiga": "Jelajahi Keindahan Bawah Laut Pulau rubiah",
     "cta": "Selengkapnya"
   },
   "sabang": {
     "text": "Temukan Pesona Sabang - tempat keindahan alam berpadu dengan keajaiban pesisir. Sabang memanggil, bersiaplah untuk jatuh cinta!",
-    "cta": "Eksplor"
+    "cta": "Jelajahi"
   },
-  "card" : {
+  "card": {
     "text": "Dapatkan Brosur Travel Gratis, Klik Tombol Download!"
+  },
+  "destination": {
+    "title": "Destinasi Pilihan",
+    "dolphin-trip": "Dolphin Trip",
+    "diving": "Diving",
+    "snorkeling": "Snorkeling",
+    "kilometer-0": "0 Kilometer Indonesia",
+    "pulau-rubiah": "Pulau Rubiah",
+    "gua-sarang": "Gua Sarang",
+    "gapang": "Pantai Gapang",
+    "sumur": "Pantai Sumur Tiga",
+    "benteng": "Benteng Anoi Itam"
   }
 }

@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/global/Header";
 import { dir } from "i18next";
 import { languages } from "@/app/i18n/settings";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "500", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang={lang} dir={dir(lang)}>
       <body
-        className={`${inter.className} bg-slate-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100`}
+        className={`${poppins.className} bg-slate-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100`}
       >
         <Header lang={lang} />
         {children}
