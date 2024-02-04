@@ -21,6 +21,7 @@ export default function Destination({
   gapang,
   sumur,
   benteng,
+  lang,
 }: {
   title: string;
   dolphin: string;
@@ -32,6 +33,7 @@ export default function Destination({
   gapang: string;
   sumur: string;
   benteng: string;
+  lang: string;
 }) {
   return (
     <div className="flex my-12 flex-col gap-4">
@@ -39,9 +41,9 @@ export default function Destination({
         {title}
       </h1>
       <div className="grid grid-cols-4 max-lg:grid-cols-3 gap-4">
-        <Link href="" className="group col-span-2 relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group col-span-2 relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {dolphin}
             </h2>
           </div>
@@ -53,9 +55,9 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href="" className="group relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {diving}
             </h2>
           </div>
@@ -67,9 +69,9 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href="" className="group relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {kilometer}
             </h2>
           </div>
@@ -81,9 +83,9 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href="" className="group max-lg:col-span-2 relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group max-lg:col-span-2 relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {snorkeling}
             </h2>
           </div>
@@ -95,9 +97,9 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href="" className="group col-span-2 relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group col-span-2 relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {rubiah}
             </h2>
           </div>
@@ -109,9 +111,9 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href="" className="group relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {gua}
             </h2>
           </div>
@@ -123,9 +125,9 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href="" className="group relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {gapang}
             </h2>
           </div>
@@ -137,9 +139,9 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href="" className="group max-lg:col-span-2 relative h-[28vh]">
+        <Link href={`/${lang}/`} className="group max-lg:col-span-2 relative h-[28vh]">
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {benteng}
             </h2>
           </div>
@@ -152,11 +154,11 @@ export default function Destination({
           </div>
         </Link>
         <Link
-          href=""
+          href={`/${lang}/`}
           className="group col-span-2 max-lg:col-span-3 relative h-[28vh]"
         >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg font-medium">
+            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {sumur}
             </h2>
           </div>

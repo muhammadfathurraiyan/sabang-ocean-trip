@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/global/Header";
+import Footer from "@/components/global/Footer";
 import { dir } from "i18next";
 import { languages } from "@/app/i18n/settings";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Header lang={lang} />
         {children}
+        <Footer lang={lang} />
       </body>
     </html>
   );

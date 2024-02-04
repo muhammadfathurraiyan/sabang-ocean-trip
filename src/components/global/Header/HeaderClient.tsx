@@ -48,7 +48,7 @@ export default function HeaderClient({
   return (
     <>
       <header
-        className={`flex fixed inset-x-0 z-10 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/0"} text-slate-100 duration-300`}
+        className={`flex fixed inset-x-0 z-10 top-0 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/0"} text-slate-100 duration-300`}
       >
         <div className="flex items-center gap-4">
           <div

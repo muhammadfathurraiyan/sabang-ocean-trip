@@ -4,6 +4,7 @@ import { useTranslation } from "../i18n";
 import Sabang from "@/components/home/Sabang";
 import Card from "@/components/home/Card";
 import Destination from "@/components/home/Destination";
+import Package from "@/components/home/Package";
 
 export default async function Home({
   params: { lang },
@@ -34,6 +35,13 @@ export default async function Home({
           gapang={t("destination.gapang")}
           sumur={t("destination.sumur")}
           benteng={t("destination.benteng")}
+          lang={lang}
+        />
+        <Package
+          title={t("package.title")}
+          text={t("package.text")}
+          cta={t("package.cta")}
+          lang={lang}
         />
       </section>
     </>
