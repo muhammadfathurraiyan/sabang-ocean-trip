@@ -63,15 +63,24 @@ export default function FooterClient({
             {beranda}
           </Link>
           |
-          <Link href={`/${lang}/tour-packages`} className="hover:text-sky-400 duration-300">
+          <Link
+            href={`/${lang}/tour-packages`}
+            className="hover:text-sky-400 duration-300"
+          >
             {paket}
           </Link>
           |
-          <Link href={`/${lang}/about`} className="hover:text-sky-400 duration-300">
+          <Link
+            href={`/${lang}/about`}
+            className="hover:text-sky-400 duration-300"
+          >
             {tentang}
           </Link>
           |
-          <Link href={`/${lang}/contact`} className="hover:text-sky-400 duration-300">
+          <Link
+            href={`/${lang}/contact`}
+            className="hover:text-sky-400 duration-300"
+          >
             {kontak}
           </Link>
         </div>

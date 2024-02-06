@@ -57,7 +57,7 @@ export default function HeaderClient({
           >
             <List size={22} />
           </div>
-          <Link href={"/"}>
+          <Link href={`/${lang}`}>
             <h1 className="flex flex-col text-2xl font-bold uppercase">
               Sabang
               <span className="font-bold text-sm -mt-2">Ocean Trip</span>
@@ -66,37 +66,37 @@ export default function HeaderClient({
         </div>
         <div className="flex items-center gap-6 max-lg:gap-4 text-sm font-medium">
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/dolphin-trip`}
             className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {dolphinTrip}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/diving`}
             className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {diving}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/snorkeling`}
             className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {snorkeling}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/kilometer-0-indonesia`}
             className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {kilometer0}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination`}
             className="flex items-center gap-1 hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {destinasiWisata} <CaretDown size={14} />
           </Link>
           <Link
-            href={"/paket-wisata"}
+            href={`/${lang}/tour-packages`}
             className="flex items-center gap-1 hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {paketWisata}

@@ -5,6 +5,7 @@ import Header from "@/components/global/Header";
 import Footer from "@/components/global/Footer";
 import { dir } from "i18next";
 import { languages } from "@/app/i18n/settings";
+import Providers from "./providers";
 
 const poppins = Poppins({
   weight: ["400", "500", "700"],
@@ -29,13 +30,15 @@ export default function RootLayout({
   params: { lang: string };
 }>) {
   return (
-    <html lang={lang} dir={dir(lang)}>
+    <html lang={lang} dir={dir(lang)} suppressHydrationWarning>
       <body
         className={`${poppins.className} bg-slate-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100`}
       >
-        <Header lang={lang} />
-        {children}
-        <Footer lang={lang} />
+        <Providers>
+          <Header lang={lang} />
+          {children}
+          <Footer lang={lang} />
+        </Providers>
       </body>
     </html>
   );
