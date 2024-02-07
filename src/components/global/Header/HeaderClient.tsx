@@ -48,7 +48,9 @@ export default function HeaderClient({
   return (
     <>
       <header
-        className={`flex fixed inset-x-0 z-10 top-0 items-center justify-between py-2 px-28 max-lg:px-4 ${isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/0"} text-slate-100 duration-300`}
+        className={`flex fixed inset-x-0 z-10 top-0 items-center justify-between py-2 px-28 max-lg:px-4 ${
+          isScroll ? "bg-slate-900/50 backdrop-blur-sm" : "bg-slate-900/0"
+        } text-slate-100 duration-300`}
       >
         <div className="flex items-center gap-4">
           <div
@@ -84,7 +86,7 @@ export default function HeaderClient({
             {snorkeling}
           </Link>
           <Link
-            href={`/${lang}/destination/kilometer-0-indonesia`}
+            href={`/${lang}/destination/0-kilometer-indonesia`}
             className="hover:text-sky-400 duration-300 max-lg:hidden"
           >
             {kilometer0}
@@ -93,7 +95,7 @@ export default function HeaderClient({
             href={`/${lang}/destination`}
             className="flex items-center gap-1 hover:text-sky-400 duration-300 max-lg:hidden"
           >
-            {destinasiWisata} <CaretDown size={14} />
+            {destinasiWisata}
           </Link>
           <Link
             href={`/${lang}/tour-packages`}
@@ -126,37 +128,37 @@ export default function HeaderClient({
         </div>
         <div className="flex flex-col items-start gap-2 font-medium">
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/dolphin-trip`}
             className="hover:text-sky-400 duration-300"
           >
             {dolphinTrip}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/diving`}
             className="hover:text-sky-400 duration-300"
           >
             {diving}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/snorkeling`}
             className="hover:text-sky-400 duration-300"
           >
             {snorkeling}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination/0-kilometer-indonesia`}
             className="hover:text-sky-400 duration-300"
           >
             {kilometer0}
           </Link>
           <Link
-            href={"/dolphin-trip"}
+            href={`/${lang}/destination`}
             className="flex items-center gap-1 hover:text-sky-400 duration-300"
           >
-            {destinasiWisata} <CaretDown size={14} />
+            {destinasiWisata}
           </Link>
           <Link
-            href={"/paket-wisata"}
+            href={`/${lang}/tour-packages`}
             className="flex items-center gap-1 hover:text-sky-400 duration-300"
           >
             {paketWisata}

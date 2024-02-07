@@ -13,12 +13,12 @@ export default async function Destination({
     "dolphin-trip",
     "diving",
     "snorkeling",
-    "kilometer-0-indonesia",
-    "pulau-rubiah",
-    "gua-sarang",
-    "pantai-gapang",
-    "pantai-sumur-tiga",
-    "benteng-anoi-itam",
+    "0-kilometer-indonesia",
+    "rubiah-island",
+    "sarang-cave",
+    "gapang-beach",
+    "sumur-tiga-beach",
+    "anoi-itam-fortress",
   ];
 
   const { t } = await useTranslation(lang, "destinationSlug");
@@ -26,7 +26,7 @@ export default async function Destination({
   if (slug.some((i) => i.includes(destination))) {
     return (
       <>
-        <Background image={BG1} />
+        <Background image={destination} />
         <section className="px-28 py-16 flex flex-col gap-16 max-lg:px-4 relative">
           <Navigation
             lang={lang}
@@ -47,6 +47,6 @@ export default async function Destination({
       </>
     );
   } else {
-    return redirect(`/${lang}`);
+    return redirect(`/${lang}/not-found`);
   }
 }

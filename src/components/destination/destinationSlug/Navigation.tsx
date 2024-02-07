@@ -1,7 +1,6 @@
 "use client";
 import { CaretRight } from "@phosphor-icons/react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Navigation({
@@ -34,6 +33,7 @@ export default function Navigation({
   benteng: string;
 }) {
   const [title, setTitle] = useState("");
+
   useEffect(() => {
     if (link === "dolphin-trip") {
       setTitle(dolphin);
@@ -41,20 +41,18 @@ export default function Navigation({
       setTitle(diving);
     } else if (link === "snorkeling") {
       setTitle(snorkeling);
-    } else if (link === "kilometer-0-indonesia") {
+    } else if (link === "0-kilometer-indonesia") {
       setTitle(kilometer);
-    } else if (link === "pulau-rubiah") {
+    } else if (link === "rubiah-island") {
       setTitle(rubiah);
-    } else if (link === "gua-sarang") {
+    } else if (link === "sarang-cave") {
       setTitle(gua);
-    } else if (link === "pantai-gapang") {
+    } else if (link === "gapang-beach") {
       setTitle(gapang);
-    } else if (link === "pantai-sumur-tiga") {
+    } else if (link === "sumur-tiga-beach") {
       setTitle(sumur);
-    } else if (link === "benteng-anoi-itam") {
+    } else if (link === "anoi-itam-fortress") {
       setTitle(benteng);
-    } else {
-      return notFound();
     }
   }, []);
 
