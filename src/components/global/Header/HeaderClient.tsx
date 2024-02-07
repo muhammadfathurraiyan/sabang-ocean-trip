@@ -1,5 +1,5 @@
 "use client";
-import { CaretDown, List, XCircle } from "@phosphor-icons/react";
+import { List, XCircle } from "@phosphor-icons/react";
 import Link from "next/link";
 import LangSwitcher from "../LangSwitcher";
 import ThemeSwitcher from "../ThemeSwitcher";

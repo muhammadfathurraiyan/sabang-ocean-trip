@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} bg-slate-50 dark:bg-slate-900 text-slate-950 dark:text-slate-100`}
       >
-        <Providers lang={lang}>
+        <Providers>
           <Header lang={lang} />
           {children}
           <Footer lang={lang} />

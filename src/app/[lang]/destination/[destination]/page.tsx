@@ -1,8 +1,7 @@
 import Background from "@/components/destination/destinationSlug/Background";
-import BG1 from "../../../../../public/bg3.jpg";
 import Navigation from "@/components/destination/destinationSlug/Navigation";
 import { useTranslation } from "@/app/i18n";
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 
 export default async function Destination({
   params: { lang, destination },

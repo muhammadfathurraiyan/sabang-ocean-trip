@@ -48,13 +48,25 @@ export default function FooterClient({
       <div className="flex flex-col items-center justify-center gap-2">
         <p>{terhubung}</p>
         <div className="flex items-center gap-2">
-          <Link href={`/${lang}`} className="hover:text-sky-400 duration-300">
+          <Link
+            aria-label="instagram"
+            href={`/${lang}`}
+            className="hover:text-sky-400 duration-300"
+          >
             <InstagramLogo size={28} />
           </Link>
-          <Link href={`/${lang}`} className="hover:text-sky-400 duration-300">
+          <Link
+            aria-label="tiktok"
+            href={`/${lang}`}
+            className="hover:text-sky-400 duration-300"
+          >
             <TiktokLogo size={28} />
           </Link>
-          <Link href={`/${lang}`} className="hover:text-sky-400 duration-300">
+          <Link
+            aria-label="facebook"
+            href={`/${lang}`}
+            className="hover:text-sky-400 duration-300"
+          >
             <FacebookLogo size={28} />
           </Link>
         </div>

@@ -50,7 +50,7 @@ export default function Destination({
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
               src={BG3}
-              alt="dolphin"
+              alt="dolphin trip site"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />
           </div>
@@ -64,7 +64,7 @@ export default function Destination({
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
               src={BG4}
-              alt="diving"
+              alt="diving site"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />
           </div>
@@ -83,7 +83,10 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href={`/${lang}/`} className="group max-lg:col-span-2 relative h-[28vh]">
+        <Link
+          href={`/${lang}/`}
+          className="group max-lg:col-span-2 relative h-[28vh]"
+        >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {snorkeling}
@@ -92,7 +95,7 @@ export default function Destination({
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
               src={BG8}
-              alt="snorkeling"
+              alt="snorkeling site"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />
           </div>
@@ -134,12 +137,15 @@ export default function Destination({
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
               src={BG11}
-              alt="gua sarang"
+              alt="gapang"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />
           </div>
         </Link>
-        <Link href={`/${lang}/`} className="group max-lg:col-span-2 relative h-[28vh]">
+        <Link
+          href={`/${lang}/`}
+          className="group max-lg:col-span-2 relative h-[28vh]"
+        >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {benteng}
@@ -148,7 +154,7 @@ export default function Destination({
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
               src={BG12}
-              alt="gua sarang"
+              alt="benteng"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />
           </div>
@@ -165,7 +171,7 @@ export default function Destination({
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
               src={BG13}
-              alt="gua sarang"
+              alt="sumur"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />
           </div>
