@@ -2,6 +2,8 @@ import Background from "@/components/destination/destinationSlug/Background";
 import Navigation from "@/components/destination/destinationSlug/Navigation";
 import { useTranslation } from "@/app/i18n";
 import { redirect } from "next/navigation";
+import Body from "@/components/destination/destinationSlug/Body";
+import Package from "@/components/home/Package";
 
 export default async function Destination({
   params: { lang, destination },
@@ -41,6 +43,13 @@ export default async function Destination({
             sumur={t("link.sumur")}
             benteng={t("link.benteng")}
             link={destination}
+          />
+          <Body title="" text="" />
+          <Package
+            title={t("package.title")}
+            text={t("package.text")}
+            cta={t("package.cta")}
+            lang={lang}
           />
         </section>
       </>
