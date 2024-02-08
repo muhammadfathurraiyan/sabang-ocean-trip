@@ -15,7 +15,6 @@ export default async function Destination({
     "diving",
     "snorkeling",
     "0-kilometer-indonesia",
-    "rubiah-island",
     "sarang-cave",
     "gapang-beach",
     "sumur-tiga-beach",
@@ -37,14 +36,13 @@ export default async function Destination({
             diving={t("link.diving")}
             snorkeling={t("link.snorkeling")}
             kilometer={t("link.kilometer-0")}
-            rubiah={t("link.pulau-rubiah")}
             gua={t("link.gua-sarang")}
             gapang={t("link.gapang")}
             sumur={t("link.sumur")}
             benteng={t("link.benteng")}
             link={destination}
           />
-          <Body title="" text="" />
+          <Body title={t(`${destination}.title`)} text={t(`${destination}.text`)} />
           <Package
             title={t("package.title")}
             text={t("package.text")}

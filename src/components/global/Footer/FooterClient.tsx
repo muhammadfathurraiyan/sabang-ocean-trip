@@ -90,7 +90,7 @@ export default function FooterClient({
           </Link>
           |
           <Link
-            href={`/${lang}/contact`}
+            href={`/${lang}/about#contact`}
             className="hover:text-sky-400 duration-300"
           >
             {kontak}
@@ -103,6 +103,7 @@ export default function FooterClient({
             href={`/${lang}`}
             className="font-bold hover:text-sky-400 duration-300"
           >
+            {" "}
             Raiyan.
           </Link>
         </p>

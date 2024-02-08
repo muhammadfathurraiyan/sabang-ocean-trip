@@ -16,7 +16,6 @@ export default function Destination({
   diving,
   snorkeling,
   kilometer,
-  rubiah,
   gua,
   gapang,
   sumur,
@@ -28,7 +27,6 @@ export default function Destination({
   diving: string;
   snorkeling: string;
   kilometer: string;
-  rubiah: string;
   gua: string;
   gapang: string;
   sumur: string;
@@ -41,7 +39,10 @@ export default function Destination({
         {title}
       </h1>
       <div className="grid grid-cols-4 max-lg:grid-cols-3 gap-4">
-        <Link href={`/${lang}/`} className="group col-span-2 relative h-[28vh]">
+        <Link
+          href={`/${lang}/destination/dolphin-trip`}
+          className="group col-span-2 relative h-[28vh]"
+        >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {dolphin}
@@ -55,7 +56,10 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href={`/${lang}/`} className="group relative h-[28vh]">
+        <Link
+          href={`/${lang}/destination/diving`}
+          className="group relative h-[28vh]"
+        >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {diving}
@@ -69,7 +73,10 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href={`/${lang}/`} className="group relative h-[28vh]">
+        <Link
+          href={`/${lang}/destination/0-kilometer-indonesia`}
+          className="group relative h-[28vh]"
+        >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {kilometer}
@@ -84,7 +91,7 @@ export default function Destination({
           </div>
         </Link>
         <Link
-          href={`/${lang}/`}
+          href={`/${lang}/destination/snorkeling`}
           className="group max-lg:col-span-2 relative h-[28vh]"
         >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
@@ -100,21 +107,10 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href={`/${lang}/`} className="group col-span-2 relative h-[28vh]">
-          <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
-            <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
-              {rubiah}
-            </h2>
-          </div>
-          <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
-            <Image
-              src={BG9}
-              alt="rubiah"
-              className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
-            />
-          </div>
-        </Link>
-        <Link href={`/${lang}/`} className="group relative h-[28vh]">
+        <Link
+          href={`/${lang}/destination/sarang-cave`}
+          className="group col-span-2 relative h-[28vh]"
+        >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {gua}
@@ -128,7 +124,10 @@ export default function Destination({
             />
           </div>
         </Link>
-        <Link href={`/${lang}/`} className="group relative h-[28vh]">
+        <Link
+          href={`/${lang}/destination/gapang-beach`}
+          className="group relative h-[28vh]"
+        >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
               {gapang}
@@ -136,15 +135,15 @@ export default function Destination({
           </div>
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
-              src={BG11}
+              src={BG13}
               alt="gapang"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />
           </div>
         </Link>
         <Link
-          href={`/${lang}/`}
-          className="group max-lg:col-span-2 relative h-[28vh]"
+          href={`/${lang}/destination/anoi-itam-fortress`}
+          className="group lg:col-span-2 relative h-[28vh]"
         >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
@@ -160,8 +159,8 @@ export default function Destination({
           </div>
         </Link>
         <Link
-          href={`/${lang}/`}
-          className="group col-span-2 max-lg:col-span-3 relative h-[28vh]"
+          href={`/${lang}/destination/sumur-tiga-beach`}
+          className="group col-span-2 relative h-[28vh]"
         >
           <div className="bg-slate-950/30 rounded-xl w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-100 duration-300 px-2">
             <h2 className="text-center text-slate-100 [text-shadow:0px_3px_10px_rgb(0_0_0_/_50%)] text-lg max-lg:text-base font-medium">
@@ -170,7 +169,7 @@ export default function Destination({
           </div>
           <div className="overflow-hidden rounded-xl absolute -z-10 top-0 left-0 w-full h-full">
             <Image
-              src={BG13}
+              src={BG11}
               alt="sumur"
               className="object-cover h-full w-full rounded-xl group-hover:scale-105 duration-300"
             />

@@ -23,7 +23,6 @@ export default async function page({
           diving={t("destination.diving")}
           snorkeling={t("destination.snorkeling")}
           kilometer={t("destination.kilometer-0")}
-          rubiah={t("destination.pulau-rubiah")}
           gua={t("destination.gua-sarang")}
           gapang={t("destination.gapang")}
           sumur={t("destination.sumur")}

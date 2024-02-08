@@ -129,36 +129,42 @@ export default function HeaderClient({
         <div className="flex flex-col items-start gap-2 font-medium">
           <Link
             href={`/${lang}/destination/dolphin-trip`}
+            onClick={() => setToggle(false)}
             className="hover:text-sky-400 duration-300"
           >
             {dolphinTrip}
           </Link>
           <Link
             href={`/${lang}/destination/diving`}
+            onClick={() => setToggle(false)}
             className="hover:text-sky-400 duration-300"
           >
             {diving}
           </Link>
           <Link
             href={`/${lang}/destination/snorkeling`}
+            onClick={() => setToggle(false)}
             className="hover:text-sky-400 duration-300"
           >
             {snorkeling}
           </Link>
           <Link
             href={`/${lang}/destination/0-kilometer-indonesia`}
+            onClick={() => setToggle(false)}
             className="hover:text-sky-400 duration-300"
           >
             {kilometer0}
           </Link>
           <Link
             href={`/${lang}/destination`}
+            onClick={() => setToggle(false)}
             className="flex items-center gap-1 hover:text-sky-400 duration-300"
           >
             {destinasiWisata}
           </Link>
           <Link
             href={`/${lang}/tour-packages`}
+            onClick={() => setToggle(false)}
             className="flex items-center gap-1 hover:text-sky-400 duration-300"
           >
             {paketWisata}

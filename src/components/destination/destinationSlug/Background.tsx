@@ -13,27 +13,37 @@ import { useEffect, useState } from "react";
 
 export default function Background({ image }: { image: string }) {
   const [imageSrc, setImageSrc] = useState<StaticImageData | null>(null);
+  const [position, setPosition] = useState("");
   useEffect(() => {
     if (image === "dolphin-trip") {
       setImageSrc(BG3);
+      setPosition("object-center");
     } else if (image === "diving") {
       setImageSrc(BG4);
+      setPosition("object-center");
     } else if (image === "snorkeling") {
       setImageSrc(BG8);
+      setPosition("object-center");
     } else if (image === "0-kilometer-indonesia") {
       setImageSrc(BG7);
+      setPosition("object-bottom");
     } else if (image === "rubiah-island") {
+      setPosition("object-center");
       setImageSrc(BG9);
     } else if (image === "sarang-cave") {
       setImageSrc(BG10);
+      setPosition("object-[center_left]");
     } else if (image === "gapang-beach") {
       setImageSrc(BG13);
+      setPosition("object-[center_left]");
     } else if (image === "sumur-tiga-beach") {
       setImageSrc(BG11);
+      setPosition("object-bottom");
     } else if (image === "anoi-itam-fortress") {
       setImageSrc(BG12);
+      setPosition("object-[center_right]");
     }
-  },[]);
+  }, []);
 
   if (imageSrc === null) {
     return <div className="h-[50vh] w-full" />;
@@ -45,7 +55,7 @@ export default function Background({ image }: { image: string }) {
         src={imageSrc!}
         priority={true}
         alt="image"
-        className="h-full w-full object-cover group-hover:scale-105 duration-300"
+        className={`h-full w-full object-cover ${position}`}
       />
     </div>
   );

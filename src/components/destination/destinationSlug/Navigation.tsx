@@ -12,7 +12,6 @@ export default function Navigation({
   diving,
   snorkeling,
   kilometer,
-  rubiah,
   gua,
   gapang,
   sumur,
@@ -26,7 +25,6 @@ export default function Navigation({
   diving: string;
   snorkeling: string;
   kilometer: string;
-  rubiah: string;
   gua: string;
   gapang: string;
   sumur: string;
@@ -43,8 +41,6 @@ export default function Navigation({
       setTitle(snorkeling);
     } else if (link === "0-kilometer-indonesia") {
       setTitle(kilometer);
-    } else if (link === "rubiah-island") {
-      setTitle(rubiah);
     } else if (link === "sarang-cave") {
       setTitle(gua);
     } else if (link === "gapang-beach") {
