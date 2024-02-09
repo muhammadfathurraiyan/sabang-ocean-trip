@@ -1,4 +1,4 @@
-import { useTranslation } from "@/app/i18n";
+import { useTranslationHook } from "@/app/i18n";
 import Background from "@/components/destination/Background";
 import HeroSection from "@/components/destination/HeroSection";
 import Navigation from "@/components/global/Navigation";
@@ -10,7 +10,7 @@ export default async function page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, "destination");
+  const { t } = await useTranslationHook(lang, "destination");
   return (
     <>
       <Background />

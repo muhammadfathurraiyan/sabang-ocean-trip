@@ -1,6 +1,6 @@
 import Background from "@/components/destination/destinationSlug/Background";
 import Navigation from "@/components/destination/destinationSlug/Navigation";
-import { useTranslation } from "@/app/i18n";
+import { useTranslationHook } from "@/app/i18n";
 import { redirect } from "next/navigation";
 import Body from "@/components/destination/destinationSlug/Body";
 import Package from "@/components/home/Package";
@@ -21,7 +21,7 @@ export default async function Destination({
     "anoi-itam-fortress",
   ];
 
-  const { t } = await useTranslation(lang, "destinationSlug");
+  const { t } = await useTranslationHook(lang, "destinationSlug");
 
   if (slug.some((i) => i.includes(destination))) {
     return (

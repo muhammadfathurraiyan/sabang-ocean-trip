@@ -1,4 +1,4 @@
-import { useTranslation } from "@/app/i18n";
+import { useTranslationHook } from "@/app/i18n";
 import Navigation from "@/components/global/Navigation";
 import HeroSection from "@/components/tour-packages/HeroSection";
 
@@ -7,7 +7,7 @@ export default async function page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslation(lang, "tour-packages");
+  const { t } = await useTranslationHook(lang, "tour-packages");
   return (
     <section className="px-12 py-16 flex flex-col gap-16 max-lg:px-4 ">
       <div className="px-16 max-lg:px-4">

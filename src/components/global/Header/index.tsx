@@ -1,8 +1,8 @@
-import { useTranslation } from "@/app/i18n";
+import { useTranslationHook } from "@/app/i18n";
 import HeaderClient from "./HeaderClient";
 
 export default async function index({ lang }: { lang: string }) {
-  const { t } = await useTranslation(lang, "header");
+  const { t } = await useTranslationHook(lang, "header");
   return (
     <HeaderClient
       dolphinTrip={t("dolphin-trip")}

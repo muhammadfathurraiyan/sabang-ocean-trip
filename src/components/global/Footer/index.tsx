@@ -1,8 +1,8 @@
-import { useTranslation } from "@/app/i18n";
+import { useTranslationHook } from "@/app/i18n";
 import FooterClient from "./FooterClient";
 
 export default async function index({ lang }: { lang: string }) {
-  const { t } = await useTranslation(lang, "footer");
+  const { t } = await useTranslationHook(lang, "footer");
   return (
     <FooterClient
       lang={lang}
