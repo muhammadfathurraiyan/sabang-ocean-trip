@@ -26,7 +26,7 @@ export default function Package({
         </h1>
         <p className="text-lg max-lg:text-base">{text}</p>
         <Link
-          href={`/${lang}/tour-package`}
+          href={`/${lang}/tour-packages`}
           className="px-6 py-3 w-fit mt-4 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
         >
           {cta}

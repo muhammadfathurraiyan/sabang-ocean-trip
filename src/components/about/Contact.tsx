@@ -18,7 +18,7 @@ export default function Contact({
       </h1>
       <p className="w-2/3 max-lg:w-full text-lg">{text}</p>
       <Link
-        href={`/`}
+        href="https://wa.me/6282361564525"
         className="px-6 py-3 text-lg w-fit mt-6 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
       >
         {cta}
