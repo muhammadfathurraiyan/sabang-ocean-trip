@@ -1,5 +1,5 @@
 import HeroSection from "@/components/home/HeroSection";
-import { useTranslationHook } from "../i18n";
+import { UseTranslation } from "../i18n";
 import Sabang from "@/components/home/Sabang";
 import Card from "@/components/home/Card";
 import Destination from "@/components/home/Destination";
@@ -10,7 +10,7 @@ export default async function Home({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslationHook(lang);
+  const { t } = await UseTranslation(lang);
   return (
     <>
       <HeroSection

@@ -1,4 +1,4 @@
-import { useTranslationHook } from "@/app/i18n";
+import { UseTranslation } from "@/app/i18n";
 import Contact from "@/components/about/Contact";
 import HeroSection from "@/components/about/HeroSection";
 import Navigation from "@/components/global/Navigation";
@@ -8,7 +8,7 @@ export default async function page({
 }: {
   params: { lang: string };
 }) {
-  const { t } = await useTranslationHook(lang, "about");
+  const { t } = await UseTranslation(lang, "about");
   return (
     <section className="px-28 py-16 flex flex-col gap-16 max-lg:px-4 relative">
       <Navigation lang={lang} link={t("title")} path="about" />
