@@ -1,0 +1,33 @@
+{
+  "link": "Tour Packages",
+  "title": "Plan Your Trip",
+  "card": {
+    "title1": "2 Nights 3 Days Package",
+    "title2": "Honeymoon Package",
+    "title3": "Medan - Sabang Package",
+    "title4": "Custom Trip Package",
+    "orang": "Person",
+    "get": "What you will get :",
+    "pilih": "Choose Package",
+    "harga": "Price :",
+    "jemput": "Pick up from the port",
+    "kamar": "1 room for 3 people",
+    "snorkeling": "Snorkeling on Rubiah Island",
+    "pemandu": "Guide",
+    "dokumentasi": "Documentation",
+    "keliling": "Exploring Sabang",
+    "maksimal": "Maximum 6 people",
+    "anak": "50% discount for 2-5 y.o. child",
+    "dekor": "Room Decoration",
+    "total": "Total trip 4 days 3 nights",
+    "tiket": "Banda Aceh - Sabang ferry tickets",
+    "mobil": "Mobil PP Medan - Sabang",
+    "dolphin": "For additional Dolphin Trip, Rp.150K/person",
+    "apasaja": "Any custom options you want",
+    "wa": "Click select package to customize package",
+    "pesan1": "I would like to discuss the 2 Days 3 Nights Package.",
+    "pesan2": "I would like to discuss the Honeymoon Package.",
+    "pesan3": "I would like to discuss the Medan - Sabang Package.",
+    "pesan4": "I would like to discuss the Custom Trip Packages."
+  }
+}

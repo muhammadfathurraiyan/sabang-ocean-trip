@@ -12,7 +12,7 @@ export default function HeroSection({
   connect: string;
 }) {
   return (
-    <main className="my-12 flex flex-col items-star justify-center">
+    <div className="my-12 flex flex-col items-star justify-center">
       <h1 className="flex flex-col text-9xl max-lg:text-7xl font-bold uppercase text-sky-600 dark:text-slate-100">
         Sabang
         <span className="font-bold text-7xl max-lg:text-4xl -mt-2">
@@ -44,6 +44,6 @@ export default function HeroSection({
           <FacebookLogo size={32} />
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

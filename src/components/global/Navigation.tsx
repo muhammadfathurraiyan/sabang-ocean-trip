@@ -5,9 +5,11 @@ import Link from "next/link";
 export default function Navigation({
   lang,
   link,
+  path,
 }: {
   lang: string;
   link: string;
+  path: string;
 }) {
   return (
     <nav className="flex items-center gap-6 border-b border-slate-900 dark:border-slate-100 py-2">
@@ -19,7 +21,7 @@ export default function Navigation({
       </Link>
       <CaretRight weight="fill" size={10} />
       <Link
-        href={`/${lang}/destination`}
+        href={`/${lang}/${path}`}
         className="hover:text-sky-400 text-sm duration-300 capitalize"
       >
         {link}

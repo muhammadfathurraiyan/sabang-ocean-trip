@@ -1,7 +1,7 @@
 import { useTranslation } from "@/app/i18n";
 import Background from "@/components/destination/Background";
 import HeroSection from "@/components/destination/HeroSection";
-import Navigation from "@/components/destination/Navigation";
+import Navigation from "@/components/global/Navigation";
 import Destination from "@/components/home/Destination";
 import Package from "@/components/home/Package";
 
@@ -15,7 +15,7 @@ export default async function page({
     <>
       <Background />
       <section className="px-28 py-16 flex flex-col gap-16 max-lg:px-4 relative">
-        <Navigation lang={lang} link={t("link")} />
+        <Navigation lang={lang} link={t("link")} path="destination" />
         <HeroSection text={t("text")} title={t("title")} />
         <Destination
           title={t("destination.title")}
