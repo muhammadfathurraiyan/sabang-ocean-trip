@@ -8,6 +8,7 @@ import { languages } from "@/app/i18n/settings";
 import Providers from "./providers";
 import { UseTranslation } from "../i18n";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   weight: ["400", "500", "700"],
@@ -66,6 +67,7 @@ export default function RootLayout({
           <Footer lang={lang} />
         </Providers>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
