@@ -51,7 +51,7 @@ export default function HeroSection({
                 {text1}
               </h1>
               <Link
-                href={`/${lang}/tour-package`}
+                href={`/${lang}/destination/tour-package`}
                 className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
               >
                 {cta}
@@ -76,7 +76,7 @@ export default function HeroSection({
                 {text2}
               </h1>
               <Link
-                href={`/${lang}/dolphin-trip`}
+                href={`/${lang}/destination/dolphin-trip`}
                 className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
               >
                 {cta}
@@ -101,7 +101,7 @@ export default function HeroSection({
                 {text3}
               </h1>
               <Link
-                href={`/${lang}/snorkeling`}
+                href={`/${lang}/destination/snorkeling`}
                 className="px-6 py-3 text-slate-100 bg-gradient-to-r from-sky-400 via-sky-600 to-sky-400 bg-size-200 hover:bg-pos-0 bg-pos-100 duration-500 rounded-lg drop-shadow-lg flex items-center gap-2 group"
               >
                 {cta}
