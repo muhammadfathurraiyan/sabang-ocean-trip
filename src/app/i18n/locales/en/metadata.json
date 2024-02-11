@@ -1,6 +1,22 @@
 {
-  "default" : {
-    "title" : "Sabang Ocean Trip",
-    "description": "Get your travel experience in Sabang with Sabang Ocean Trip"
+  "default": {
+    "title": "Sabang Ocean Trip",
+    "description": "Get your travel experience in Sabang with Sabang Ocean Trip."
+  },
+  "notfound": {
+    "title": "Error 404 Not Found",
+    "text": "The Page you are looking for was not found."
+  },
+  "packages": {
+    "title": "Plan Your Trip",
+    "text": "Plan your special trip in Sabang with Sabang Ocean Trip."
+  },
+  "destination": {
+    "title": "Place To Go",
+    "text": "Discover interesting tourist destinations in Sabang with Sabang Ocean Trip."
+  },
+  "about": {
+    "title": "About",
+    "text": "Get to know more about Sabang Ocean Trip."
   }
 }

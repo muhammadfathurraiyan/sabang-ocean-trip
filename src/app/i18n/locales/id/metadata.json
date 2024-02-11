@@ -1,6 +1,22 @@
 {
-  "default" : {
-    "title" : "Sabang Ocean Trip",
-    "description": "Raih pengalaman perjalanan wisata anda di sabang bersama Sabang Ocean Trip"
+  "default": {
+    "title": "Sabang Ocean Trip",
+    "description": "Raih pengalaman perjalanan wisata anda di Sabang bersama Sabang Ocean Trip."
+  },
+  "notfound": {
+    "title": "Error 404 Tidak Ditemukan",
+    "text": "Halaman yang anda cari tidak ditemukan."
+  },
+  "packages": {
+    "title": "Paket Wisata",
+    "text": "Rencanakan paket wisata anda di Sabang bersama Sabang Ocean Trip."
+  },
+  "destination": {
+    "title": "Destinasi Wisata",
+    "text": "Temukan destinasi wisata menarik di sabang bersama Sabang Ocean Trip."
+  },
+  "about": {
+    "title": "Tentang",
+    "text": "Mengenal lebih jauh tentang Sabang Ocean Trip."
   }
 }

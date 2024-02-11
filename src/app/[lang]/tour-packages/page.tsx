@@ -2,6 +2,33 @@ import { UseTranslation } from "@/app/i18n";
 import Background from "@/components/global/Background";
 import Navigation from "@/components/global/Navigation";
 import HeroSection from "@/components/tour-packages/HeroSection";
+import { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: { lang: string };
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const lang = params.lang;
+
+  // fetch data]
+  const { t } = await UseTranslation(lang, "metadata");
+
+  // optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || [];
+
+  return {
+    title: t("packages.title"),
+    description: t("packages.description"),
+    // openGraph: {
+    //   images: ["/some-specific-page-image.jpg", ...previousImages],
+    // },
+  };
+}
 
 export default async function page({
   params: { lang },

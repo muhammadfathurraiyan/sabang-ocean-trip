@@ -67,7 +67,7 @@ export default function RootLayout({
           <Footer lang={lang} />
         </Providers>
         <SpeedInsights />
-        <Analytics />
+        <Analytics />..........
       </body>
     </html>
   );
